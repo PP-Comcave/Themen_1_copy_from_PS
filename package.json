@@ -2,11 +2,14 @@
   "name": "themen_1",
   "version": "1.0.0",
   "description": "Prozedurale Programmierung",
-  "main": "src/02_variablen.js",
+  "main": "src/03_prompt.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
