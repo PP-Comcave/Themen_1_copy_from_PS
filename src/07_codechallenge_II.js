@@ -35,6 +35,6 @@ switch (true) {
         console.log(firstName + " trinkt Wein.");
         break;   
     default:
-        console.log("Bitte Tee trinken!");   
+        console.log("Bitte mehr Tee trinken!");   
         break;
 }
