@@ -36,3 +36,16 @@ ausgabeNamen2("Melanie");
 function ausgabeNamen2(firstName) {  // Parameter
     console.log("Hallo, " + firstName + "!");
 }
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+
+ausgabeNamenParams("Max","Mütze");
+
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
+
+function ausgabeNamenParams(firstName, familyName) {  // Parameter
+    console.log("Hallo, " + firstName + " " + familyName + "!");
+}
+
