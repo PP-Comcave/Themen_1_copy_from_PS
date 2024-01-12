@@ -29,9 +29,9 @@ function ausgabeNamen() {
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-ausgabeNamen2("Maria"); // Argument --> Daten für Parameter
-ausgabeNamen2("Nadim");
-ausgabeNamen2("Melanie");
+// ausgabeNamen2("Maria"); // Argument --> Daten für Parameter
+// ausgabeNamen2("Nadim");
+// ausgabeNamen2("Melanie");
 
 function ausgabeNamen2(firstName) {  // Parameter
     console.log("Hallo, " + firstName + "!");
@@ -40,7 +40,7 @@ function ausgabeNamen2(firstName) {  // Parameter
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter / Argumente
 
-ausgabeNamenParams("Max","Mütze");
+// ausgabeNamenParams("Max","Mütze");
 
 const prompt = require('prompt-sync')({sigint: true});
 ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
@@ -49,3 +49,19 @@ function ausgabeNamenParams(firstName, familyName) {  // Parameter
     console.log("Hallo, " + firstName + " " + familyName + "!");
 }
 
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
+
+ausgabeNamenSRP("Max","Mütze");
+
+function ausgabeNamenSRP(firstName, familyName) {  // Parameter
+
+    // 1. Funktionalität: string composing
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+
+    // 2. Funktionalität: string output
+    console.log(outputStr);
+}
