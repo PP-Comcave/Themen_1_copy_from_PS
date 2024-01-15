@@ -10,14 +10,28 @@
 4. Ausgabe in Konsole : check!
 */
 
+// module: division a / b |  test:
+output(divide(4,2));
+output(divide(3,2));
+output(divide(3,-2));
+output(divide(0,2));
+output(divide(3,0));
+output(divide(0,0));
+function divide(a,b) {
+	if (b !== 0) {  // b ungleich 0
+		return a / b;
+	} else {
+		return "Division durch Null ist nicht definiert";
+	}
+}
+
 // module: multiplication a * b |  test:
-output(multiply(3,2));
-output(multiply(3,-2));
-output(multiply(3,0));
+// output(multiply(3,2));
+// output(multiply(3,-2));
+// output(multiply(3,0));
 function multiply(a,b) {
 	return  a * b;
 }
-
 
 // module: subtraction a - b |  test:
 // output(subtract(3,2));
