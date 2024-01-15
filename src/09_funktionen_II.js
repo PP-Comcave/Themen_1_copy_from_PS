@@ -6,11 +6,17 @@
 
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
 
 const ERROR_STR_DIV = "Division durch 0 ist nicht möglich!";
+
+
+
+
+
+
 
 // module: division a / b |  test:
 output(divide(4,2));
@@ -26,6 +32,8 @@ function divide(a,b) {
 	}
 
 	return a / b;  // Reguläres Verhalten
+
+	// return b !== 0 ? a / b : ERROR_STR_DIV ; // Ternäre Version
 }
 
 // module: multiplication a * b |  test:
