@@ -42,8 +42,8 @@ function ausgabeNamen2(firstName) {  // Parameter
 
 // ausgabeNamenParams("Max","Mütze");
 
-const prompt = require('prompt-sync')({sigint: true});
-ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
+// const prompt = require('prompt-sync')({sigint: true});
+// ausgabeNamenParams(prompt("Vorname? :"),prompt("Name? :")); // Piping
 
 function ausgabeNamenParams(firstName, familyName) {  // Parameter
     console.log("Hallo, " + firstName + " " + familyName + "!");
@@ -54,7 +54,7 @@ function ausgabeNamenParams(firstName, familyName) {  // Parameter
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Max","Mütze");
+// ausgabeNamenSRP("Max","Mütze");
 
 function ausgabeNamenSRP(firstName, familyName) {  // Parameter
 
