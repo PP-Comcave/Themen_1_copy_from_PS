@@ -12,7 +12,14 @@
 
 
 
-
+// module: subtraction a - b |  test:
+output(subtract(3,2));
+output(subtract(3,-2));
+output(subtract(3,0));
+output(subtract(0,2));
+function subtract(a,b) {
+	return a - b;
+}
 
 
 // module: addition a + b |  test:
