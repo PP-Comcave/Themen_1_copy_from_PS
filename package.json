@@ -2,7 +2,7 @@
   "name": "themen_1",
   "version": "1.0.0",
   "description": "Prozedurale Programmierung",
-  "main": "src/10_funktionen_III.js",
+  "main": "src/11_Arrays_I.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
