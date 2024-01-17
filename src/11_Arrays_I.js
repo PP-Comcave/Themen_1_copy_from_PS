@@ -7,6 +7,7 @@
  */
 
 /*** 02. Theorie: Array */
+
 // let arr;
 // // arr = new Array();  // Konstruktor
 // arr = []; // Literal
@@ -16,6 +17,40 @@
 // output(arr.length); // Anzahl der Elemente
 // output(arr[0]); // Index 0 (1. Pos. im Array)
 // output(arr[arr.length-1]); // letze Pos. / allgemein
+
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 0; i < 5; i++) 
+// {
+//    output(i);   
+// }
+
+// Dekrement (obere Grenze --> untere Grenze)
+// for (let i = 10; i > 0; i--) 
+// {
+//    output(i);   
+// }
+
+// Inkrement (var. Schrittweite)
+// for (let i = 10; i <= 100; i += 5) 
+// {
+//    output(i);   
+// }
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i = 0; i < arr.length; i++) 
+// {
+// //    output(i); 
+//    output(arr[i]);
+// }
+
+
+
+
 
 /**
  *   PRAXIS
@@ -61,7 +96,22 @@ function getSentenceArr(arr) {
     return str;
 }
 
+/*** 01b. Funktionalität mit Array 2  */
+// Transponierung:  untereinander ---> nebeneinander
+// Helge Schneider: Anananandereihung ...
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str;
 
+    for (let i = 0; i < arr.length; i++) 
+    {
+    output(arr[i]);
+    }
+
+    return str;
+}
 
 
 
