@@ -28,6 +28,31 @@ let arr;
 // }
 
 
+/***** Objekte 1 Daten/Funktionen *******/
+
+let person = {
+                firstName:"Behrang",
+                familyName:"Valadkhani",
+                salary: [120000, 160000],
+                permission: true,
+                sayHello: function(){
+                    return "Hello";
+                }
+            };
+
+
+// output(person);
+output(person.familyName)
+output(person.firstName)
+output(person.salary[1])
+output(person.permission)
+output(person.sayHello())
+
+const txt = person.sayHello() + ", ich bin " + person.firstName +
+            " und verdiene " + person.salary[1] + " p.a."
+
+output(txt);
+
 
 
 // Modul: Ausgabe | Test
